@@ -1,0 +1,12 @@
+.footer {
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+  text-align: center;
+}
+
+.footer__copy {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
