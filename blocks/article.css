@@ -31,9 +31,8 @@
 }
 
 
-.article__content {
+.article__content {}
 
-}
 .article__text {
   margin: 0;
   max-width: 840px;
@@ -54,12 +53,12 @@
   margin-top: 0;
 }
 
-.article__quote p  {
-   margin: 0 0 4px;
-  }
+.article__quote p {
+  margin: 0 0 4px;
+}
 
 .article__cite {
-   font-size: 24px;
+  font-size: 24px;
   line-height: 1.4167;
   letter-spacing: 0;
   text-align: right;
@@ -71,21 +70,25 @@
   .article {
     padding: 44px 20px;
   }
+
   .article__title {
     font-size: 28px;
     margin-bottom: 4px;
     max-width: 100%;
   }
+
   .article__subtitle {
     font-size: 18px;
     margin-bottom: 20px;
     max-width: 100%;
   }
+
   .article__quote {
     border-right-width: 3px;
     font-size: 17px;
     padding-right: 14px;
   }
+
   .article__text {
     font-size: 17px;
   }
@@ -98,23 +101,27 @@
     display: block;
     max-width: 100%;
   }
+
   .article__title {
     font-size: 22px;
     margin-bottom: 8px;
     text-align: center;
     max-width: 100%;
   }
+
   .article__subtitle {
     font-size: 16px;
     margin-bottom: 16px;
     text-align: center;
     max-width: 100%;
   }
+
   .article__quote {
     margin: 0 0 16px;
     padding-right: 12px;
     font-size: 16px;
   }
+
   .article__text {
     font-size: 16px;
     line-height: 1.55;
