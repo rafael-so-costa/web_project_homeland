@@ -12,8 +12,7 @@
     />
     <link rel="icon" href="./favicon.ico" />
     <link rel="stylesheet" href="./pages/index.css" />
-
-    <link rel="preload" href="./images/logo.png" type="image/png" />
+    <link rel="preload" href="./images/logo.png" as="image" type="image/png" />
   </head>
   <body>
     <div class="page">
@@ -62,6 +61,299 @@
               você é, estamos felizes por você ser nosso vizinho.
             </p>
           </div>
+        </section>
+
+        <!-- PHOTO GRID -->
+        <section class="photo-grid" aria-labelledby="photo-grid-title">
+          <h2 id="photo-grid-title" class="visually-hidden">Galeria</h2>
+          <ul class="photo-grid__list">
+            <!-- 12 imagens (exemplos). Troque os arquivos e os alt conforme seu acervo -->
+            <li class="photo-grid__item">
+              <img
+                class="photo-grid__image"
+                src="./images/image1.png"
+                alt="Vista aérea de cidade costeira"
+              />
+            </li>
+            <li class="photo-grid__item">
+              <img
+                class="photo-grid__image"
+                src="./images/image2.png"
+                alt="Centro histórico com praça"
+              />
+            </li>
+            <li class="photo-grid__item">
+              <img
+                class="photo-grid__image"
+                src="./images/image3.png"
+                alt="Montanhas ao pôr do sol"
+              />
+            </li>
+            <li class="photo-grid__item">
+              <img
+                class="photo-grid__image"
+                src="./images/image4.png"
+                alt="Ponte sobre rio"
+              />
+            </li>
+            <li class="photo-grid__item">
+              <img
+                class="photo-grid__image"
+                src="./images/image5.png"
+                alt="Casario típico"
+              />
+            </li>
+            <li class="photo-grid__item">
+              <img
+                class="photo-grid__image"
+                src="./images/image6.png"
+                alt="Parque arborizado"
+              />
+            </li>
+            <li class="photo-grid__item">
+              <img
+                class="photo-grid__image"
+                src="./images/image7.png"
+                alt="Mercado local"
+              />
+            </li>
+            <li class="photo-grid__item">
+              <img
+                class="photo-grid__image"
+                src="./images/image8.png"
+                alt="Praia deserta"
+              />
+            </li>
+          </ul>
+        </section>
+
+        <section Criccieth class="place">
+          <h3 class="place__heading">Criccieth, País de Gales</h3>
+
+          <!-- Meta em 2 colunas: Artistas | Website -->
+          <div class="place__meta">
+            <div class="place__meta-group">
+              <span class="place__meta-label">Artistas</span>
+              <a
+                class="place__meta-link"
+                href="#"
+                target="_blank"
+                rel="noopener"
+                >Steffan Warren, editor-chefe</a
+              >
+              <a
+                class="place__meta-link"
+                href="#"
+                target="_blank"
+                rel="noopener"
+                >Kseniya Glagoleva, gerente de projeto</a
+              >
+            </div>
+          </div>
+
+          <!-- Imagem do card -->
+          <img
+            class="place__image"
+            src="./images/image1.png"
+            alt="Vista de Criccieth com o castelo ao fundo"
+          />
+
+          <!-- Texto do card -->
+          <div class="place__text">
+            <p>
+              A ruína medieval do Castelo de Cricieth tem vista para a cidade
+              abaixo de uma rocha que se projeta para o mar. Acredita-se que
+              tenha sido construído por Llewelyn, o Grande, no século XIII.
+              Cerca de 900 anos depois, a auto-intitulada *Pérola de Gales nas
+              margens de Snowdonia* tornou-se um destino turístico popular
+              durante os meses de verão.
+            </p>
+            <p>
+              A uma curta caminhada da estrada do castelo, você pode desfrutar
+              do melhor sorvete do mundo no Cadwalader's, cujo ingrediente
+              secreto, segundo rumores, são algas marinhas de origem local.
+              Outra reivindicação à fama é o fato de que Criccieth ganhou o
+              prêmio *Wales in Bloom* por cinco anos consecutivos por suas
+              espetaculares exibições florais pela cidade. Foi também a casa de
+              David Lloyd George, o único galês a ocupar o cargo de
+              primeiro-ministro do Reino Unido.
+            </p>
+          </div>
+
+          <!-- CTA -->
+          <a
+            class="place__button"
+            href="https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq"
+            target="_blank"
+            rel="noopener"
+          >
+            Compre esta obra de arte como NFT
+          </a>
+        </section>
+
+        <section barea class="place">
+          <h3 class="place__heading">Berea, EUA</h3>
+
+          <!-- Meta em 2 colunas: Artistas | Website -->
+          <div class="place__meta">
+            <div class="place__meta-group">
+              <span class="place__meta-label">Artistas</span>
+              <a
+                class="place__meta-link"
+                href="#"
+                target="_blank"
+                rel="noopener"
+                >Travis Turner, autor e editor</a
+              >
+
+            </div>
+          </div>
+
+          <!-- Imagem do card -->
+          <img
+            class="place__image"
+            src="./images/image2.png"
+            alt="Berea é uma pequena cidade localizada na parte central do
+              Kentucky"
+          />
+
+          <!-- Texto do card -->
+          <div class="place__text">
+            <p>
+              Berea é uma pequena cidade localizada na parte central do
+              Kentucky. A cidade é cercada por belas florestas e campos. É
+              conhecida como a capital do artesanato do estado, e os visitantes
+              encontrarão muitas oportunidades de compras: lojas com bijuterias
+              artesanais, velas, artigos de madeira, galerias, ateliês de vidro
+              e muito mais. A cidade realiza um festival anual que celebra o
+              "pão de colher", um prato local feito com pão de milho e servido
+              com uma colher de pau.
+            </p>
+            <p>
+              No entanto, provavelmente é mais conhecido pela faculdade local. O
+              Berea College foi fundado em 1855 e foi o primeiro colégio no sul
+              a ser racialmente integrado, bem como o primeiro a ser misto. De
+              forma um tanto singular, não cobra mensalidades - todo aluno
+              recebe uma bolsa de estudos integral.
+            </p>
+          </div>
+
+          <!-- CTA -->
+          <a
+            class="place__button"
+            href="https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq"
+            target="_blank"
+            rel="noopener"
+          >
+            Compre esta obra de arte como NFT
+          </a>
+        </section>
+
+        <section burundi class="place">
+          <h3 class="place__heading">Muramvya, Burundi</h3>
+
+          <!-- Meta em 2 colunas: Artistas | Website -->
+          <div class="place__meta">
+            <div class="place__meta-group">
+              <span class="place__meta-label">Artistas</span>
+              <a
+                class="place__meta-link"
+                href="#"
+                target="_blank"
+                rel="noopener"
+                >Grevisse Kenguruka, editor técnico</a
+              >
+            </div>
+          </div>
+
+          <!-- Imagem do card -->
+          <img
+            class="place__image"
+            src="./images/image3.png"
+            alt="Muramvya, Burundi"
+          />
+
+          <!-- Texto do card -->
+          <div class="place__text">
+            <p>
+              Muramvya é uma das 18 províncias de Burundi. Na era do reino,
+              Muramvya era a capital real e em 2007, por causa de sua paisagem
+              cultural e natural, foi adicionada à Lista Provisória do
+              Patrimônio Mundial da UNESCO. Está localizada no centro de
+              Burundi, entre as capitais políticas e econômicas do país.
+            </p>
+            <p>
+              O clima é bastante frio à noite, mas durante o dia, você pensaria
+              que está no céu. A 2.665 metros (8.743 pés) acima do nível do mar,
+              o Monte Teza é um dos lugares mais frios da província. Mas essa
+              brisa fresca permite uma das maiores plantações de chá e café do
+              país, que representam a maior parte das exportações do Burundi.
+            </p>
+            <p>
+              O Parque Nacional de Kibira, uma das maiores reservas de vida
+              selvagem para macacos, se sobrepõe a quatro províncias, incluindo
+              Muramvya. Este Parque Nacional encontra-se no ápice das belas
+              montanhas do Congo-Nile Divide, variando entre 1.550 e 2.660
+              metros de altitude. Está repleta de uma bela vegetação e fonte
+              para os vários rios e riachos que fornecem água em todo o país.
+            </p>
+          </div>
+
+          <!-- CTA -->
+          <a
+            class="place__button"
+            href="https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq"
+            target="_blank"
+            rel="noopener"
+          >
+            Compre esta obra de arte como NFT
+          </a>
+        </section>
+
+
+        <section imarui class="place">
+          <h3 class="place__heading">Imaruí - Brasil</h3>
+
+          <!-- Meta em 2 colunas: Artistas | Website -->
+          <div class="place__meta">
+            <div class="place__meta-group">
+              <span class="place__meta-label">Artista</span>
+              <a
+                class="place__meta-link"
+                href="#"
+                target="_blank"
+                rel="noopener"
+                >Rafael Costa, Analista de SEO</a
+              >
+            </div>
+          </div>
+
+          <!-- Imagem do card -->
+          <img
+            class="place__image"
+            src="./images/imarui.png"
+            alt="Vista de Criccieth com o castelo ao fundo"
+          />
+
+          <!-- Texto do card -->
+          <div class="place__text">
+            <p>
+             A influência da colonização açoriana se faz presente no dia-a-dia da cidade, tanto na arquitetura como nas festas e manifestações religiosas. A pesca é a principal fonte de economia do município, seguida da agricultura, onde se destaca o arroz, a farinha de mandioca e outros. O município também está investindo no turismo rural, tendo ótimas pousadas.
+            </p>
+            <p>
+              Localiza-se a uma latitude 28º20'29" sul e a uma longitude 48º49'12" oeste, estando a uma altitude de 6 metros. Clima Mesotérmico úmido, com verão quente e temperatura média de 19,5°C. Sua população no censo de 2010, era é de 11.672 habitantes.
+            </p>
+          </div>
+
+          <!-- CTA -->
+          <a
+            class="place__button"
+            href="https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq"
+            target="_blank"
+            rel="noopener"
+          >
+            Compre esta obra de arte como NFT
+          </a>
         </section>
       </main>
       <footer class="footer">

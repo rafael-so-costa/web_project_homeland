@@ -38,7 +38,7 @@
 
 .header__media {
   width: 100%;
-
+  max-width: 1184px;
   margin: 40px auto 0;
   border-radius: 12px;
   overflow: hidden;

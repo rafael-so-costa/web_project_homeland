@@ -1,0 +1,155 @@
+/* ===== PLACES ===== */
+.places {
+  /*max-width: var(--maxw);*/
+  margin: 0 auto;
+  padding: 56px 24px;
+}
+
+/* Card em Grid: ESQ = título, imagem, botão | DIR = meta, texto */
+.place {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;              /* esquerda | direita */
+  grid-template-areas:
+    "heading  meta"
+    "image    text"
+    "button   text";
+  gap: 24px;
+  padding: 24px;
+
+
+  background:
+    radial-gradient(120% 120% at 100% 0%, rgba(255,255,255,0.06), rgba(255,255,255,0) 60%),
+    var(--surface);
+  box-shadow: 0 18px 44px rgba(0,0,0,.32);
+  margin-bottom: 24px;
+  max-width: 984px;
+
+  margin: 0 auto;
+}
+
+/* ----- ESQUERDA ----- */
+.place__heading {
+  grid-area: heading;        /* fica acima da imagem */
+  margin: 0;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1.25;
+  max-width: 460px;
+
+}
+
+.place__image {
+  grid-area: image;          /* imagem à esquerda */
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0 16px 40px rgba(0,0,0,.35);
+}
+
+.place__button {
+  grid-area: button;         /* botão abaixo da imagem */
+  justify-self: start;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.15;
+  color: #fff;
+  max-width: 356px;
+  max-height: 48px;
+
+  background: linear-gradient(135deg, #0278FE 0%,  #003A7B 100%);
+
+  transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+}
+.place__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(90,120,255,.5);
+  filter: brightness(1.03);
+}
+
+/* ----- DIREITA ----- */
+.place__meta {
+  grid-area: meta;           /* “Artistas” + “Website” no topo direito */
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 16px;
+  align-content: start;
+}
+.place__meta-group { display: grid; gap: 6px; }
+.place__meta-label {
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  opacity: .7;
+}
+.place__meta-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.4;
+  border-bottom: 1px dashed transparent;
+  transition: border-color .2s ease, opacity .2s ease;
+}
+.place__meta-link:hover { border-color: var(--accent); opacity: .9; }
+
+.place__text {
+  grid-area: text;           /* texto ocupa a coluna direita inteira (duas linhas) */
+  display: grid;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== Tablet (545–1024px) ===== */
+@media (max-width: 1024px) and (min-width: 545px) {
+  .places { padding: 44px 20px; }
+  .place {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 14px;
+  }
+  .place__image { border-radius: 12px; }
+  .place__text  { font-size: 17px; }
+}
+
+/* ===== Mobile (≤544px): empilha com ordem semântica clara ===== */
+/* heading → image → button → meta → text */
+@media (max-width: 544px) {
+  .places { padding: 28px 16px; }
+
+  .place {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "heading"
+      "image"
+      "button"
+      "meta"
+      "text";
+    gap: 16px;
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .place__meta {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 0;               /* evita “buracos” entre blocos */
+  }
+
+  .place__image { border-radius: 10px; }
+  .place__text  { font-size: 16px; line-height: 1.55; }
+  .place__button { width: 100%; justify-content: center; }
+}
