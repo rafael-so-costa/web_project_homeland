@@ -33,7 +33,7 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 2px;
-  box-shadow: 0 16px 40px rgba(0,0,0,.35);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, .35);
 }
 
 .place__button {
@@ -42,7 +42,7 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 14px 20px;
+  padding: 5px;
   border-radius: 12px;
   text-decoration: none;
   font-weight: 600;
@@ -54,11 +54,12 @@
   transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
   background: #4C6FFF;
   background: linear-gradient(135deg, var(--btn-grad-1, #4C6FFF), var(--btn-grad-2, #9F6BFF));
-  box-shadow: var(--btn-shadow, 0 12px 28px rgba(76,111,255,.35));
+  box-shadow: var(--btn-shadow, 0 12px 28px rgba(76, 111, 255, .35));
 }
+
 .place__button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 16px 32px rgba(90,120,255,.5);
+  box-shadow: 0 16px 32px rgba(90, 120, 255, .5);
   filter: brightness(1.03);
 }
 
@@ -70,7 +71,12 @@
   gap: 12px 16px;
   align-content: start;
 }
-.place__meta-group { display: grid; gap: 6px; }
+
+.place__meta-group {
+  display: grid;
+  gap: 6px;
+}
+
 .place__meta-label {
   font-size: 12px;
   line-height: 1.2;
@@ -78,6 +84,7 @@
   text-transform: uppercase;
   opacity: .7;
 }
+
 .place__meta-link {
   color: var(--accent);
   text-decoration: none;
@@ -86,6 +93,7 @@
 
   transition: border-color .2s ease, opacity .2s ease;
 }
+
 .place__meta-link:hover {
   border-color: var(--accent);
   opacity: .9;
@@ -103,17 +111,42 @@
 
 
 
-@media (max-width: 1024px) and (min-width: 545px) {
+@media (max-width: 1024px) and (min-width: 329px) {
+  .place__image {
+    border-radius: 12px;
+  }
 
-
-  .place__image { border-radius: 12px; }
-  .place__text  { font-size: 17px; }
+  .place__text {
+    font-size: 17px;
+  }
 }
 
-@media (max-width: 544px) {
+@media (max-width: 328px) {
 
 
 
+  .place {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "heading"
+      "meta"
+      "image"
+      "text"
+      "button";
+  }
+
+  .place__button {
+    width: 100%;
+    max-width: 100%;
+  white-space: normal;      /* permite quebrar em 2 linhas se necessário */
+  text-align: center;
+  }
+
+  /* ocupa toda a largura com conforto */
+
+  .place__heading {
+    grid-template-columns: 1fr;
+  }
 
   .place__meta {
     grid-template-columns: 1fr;
@@ -124,10 +157,12 @@
   .place__image {
     border-radius: 10px;
   }
-  .place__text  {
+
+  .place__text {
     font-size: 16px;
     line-height: 1.55;
   }
+
   .place__button {
     width: 100%;
     justify-content: center;
